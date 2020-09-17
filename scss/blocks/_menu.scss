@@ -1,14 +1,14 @@
-.box__main--menu {
+.box__main__menu {
     display: flex;
     justify-content: space-between;
     width: $page-elements-width;
-    margin-top: 2rem;
+    margin-top: 2.3rem;
 
-    &--select--selector, &--search--input {
+    &__select--selector, &__search--input {
         height: 2rem;
         font-size: .95rem;
         border: 1px solid #d9d9d9;
-        background-color: #fff;
+        background-color: rgb(250, 250, 250);
         padding: 6px 9px;
         transition: border-color .5s, box-shadow .5s;
         -webkit-transition: border-color .5s, box-shadow .5s;
@@ -28,12 +28,37 @@
             box-shadow: 0 0 3px $glow-color;
         }
 }
-    &--select--selector {
+    &__select--selector {
         width: 15.6rem;
     }
 
-    &--search--input {
+    &__search--input {
         color: $hidden-text-color;
-        width: 22rem;
+        width: 23rem;
+    }
+
+    &__search--button {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background: url('./../../img/search.png');
+        background-size: cover;
+        opacity: 0.5;
+        border: 0;
+        margin: 7px -2rem 0;
+        z-index: 1;
+        transform: opacity .3s;
+        -webkit-transform: opacity .3s;
+        -moz-transform: opacity .3s;
+        -ms-transform: opacity .3s;
+        -o-transform: opacity .3s;
+        
+        &:hover {
+            opacity: 1;
+        }
+
+        &:hover .box__main__menu__search--input {
+            border-color: $glow-color;
+        }
     }
 }

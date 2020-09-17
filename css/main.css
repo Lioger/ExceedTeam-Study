@@ -4,7 +4,7 @@
   margin: 0; }
 
 body {
-  background-color: #e8e8ec; }
+  background-color: #ececee; }
 
 .box__header {
   display: flex;
@@ -12,17 +12,21 @@ body {
   justify-content: center;
   background-color: #222b36;
   border: 3px solid #333333;
-  width: 100%; }
-  .box__header--mainblock {
+  width: 100%;
+  z-index: 2; }
+  .box__header__mainblock {
     display: flex;
     justify-content: flex-end;
-    width: 45%;
-    margin: .4rem; }
-  .box__header--mainblock--logo {
-    margin-right: auto; }
+    width: 57.2%;
+    margin: .4rem;
+    padding-right: 7.3rem; }
 
-.box__header--mainblock--link {
-  padding: 0.7rem 2.2rem;
+.box__header__mainblock--logo {
+  height: 1.5rem;
+  margin: auto auto auto 0; }
+
+.box__header__mainblock--link {
+  padding: 0.6rem 2.2rem 0.7rem;
   font-family: "Lato";
   font-weight: 400;
   font-feature-settings: "tnum","tnum";
@@ -35,7 +39,7 @@ body {
   -moz-transition: border .4s;
   -ms-transition: border .4s;
   -o-transition: border .4s; }
-  .box__header--mainblock--link:hover {
+  .box__header__mainblock--link:hover {
     border-bottom: 2px solid #059bff; }
 
 .box__main {
@@ -55,16 +59,16 @@ body {
     font-size: 3rem;
     margin-top: 3.95rem; }
 
-.box__main--menu {
+.box__main__menu {
   display: flex;
   justify-content: space-between;
-  width: 57%;
-  margin-top: 2rem; }
-  .box__main--menu--select--selector, .box__main--menu--search--input {
+  width: 57.2%;
+  margin-top: 2.3rem; }
+  .box__main__menu__select--selector, .box__main__menu__search--input {
     height: 2rem;
     font-size: .95rem;
     border: 1px solid #d9d9d9;
-    background-color: #fff;
+    background-color: #fafafa;
     padding: 6px 9px;
     transition: border-color .5s, box-shadow .5s;
     -webkit-transition: border-color .5s, box-shadow .5s;
@@ -76,21 +80,70 @@ body {
     -moz-border-radius: 4px;
     -ms-border-radius: 4px;
     -o-border-radius: 4px; }
-    .box__main--menu--select--selector:hover, .box__main--menu--search--input:hover {
+    .box__main__menu__select--selector:hover, .box__main__menu__search--input:hover {
       border-color: #059bff; }
-    .box__main--menu--select--selector:focus, .box__main--menu--search--input:focus {
+    .box__main__menu__select--selector:focus, .box__main__menu__search--input:focus {
       border-color: #059bff;
       box-shadow: 0 0 3px #059bff; }
-  .box__main--menu--select--selector {
+  .box__main__menu__select--selector {
     width: 15.6rem; }
-  .box__main--menu--search--input {
+  .box__main__menu__search--input {
     color: #918e8e;
-    width: 22rem; }
+    width: 23rem; }
+  .box__main__menu__search--button {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: url("./../../img/search.png");
+    background-size: cover;
+    opacity: 0.5;
+    border: 0;
+    margin: 7px -2rem 0;
+    z-index: 1;
+    transform: opacity .3s;
+    -webkit-transform: opacity .3s;
+    -moz-transform: opacity .3s;
+    -ms-transform: opacity .3s;
+    -o-transform: opacity .3s; }
+    .box__main__menu__search--button:hover {
+      opacity: 1; }
+    .box__main__menu__search--button:hover .box__main__menu__search--input {
+      border-color: #059bff; }
 
-.box__main--podcasts {
-  width: 57%;
+.box__main__podcasts {
+  width: 57.2%;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap; }
-  .box__main--podcasts--cards {
-    width: 18%; }
+  flex-direction: column;
+  font-family: "Lato";
+  font-feature-settings: "tnum","tnum";
+  line-height: 1.7; }
+  .box__main__podcasts--titles {
+    font-size: 1.54rem;
+    margin: 3.3rem 0 0; }
+  .box__main__podcasts__cardbox {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+  .box__main__podcasts__card {
+    width: 19%;
+    margin-top: 1.4rem; }
+    .box__main__podcasts__card--cover {
+      width: 100%; }
+    .box__main__podcasts__card--description {
+      font-size: .87rem;
+      transition: color .3s;
+      margin: .3rem 0 1rem;
+      -webkit-transition: color .3s;
+      -moz-transition: color .3s;
+      -ms-transition: color .3s;
+      -o-transition: color .3s; }
+      .box__main__podcasts__card--description:hover {
+        color: #0e82cf; }
+
+@media only screen and (max-width: 800px) {
+  .box__main__menu {
+    width: 100%; }
+  .box__main__podcasts {
+    width: 100%; }
+  .box__main__podcasts__card {
+    width: 50%; } }

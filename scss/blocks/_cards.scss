@@ -1,10 +1,41 @@
-.box__main--podcasts {
+.box__main__podcasts {
     width: $page-elements-width;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    flex-direction: column;
+    font-family: $main-font;
+    font-feature-settings: "tnum","tnum";
+    line-height: 1.7;
 
-    &--cards {
-        width: 18%;
+    &--titles {
+        font-size: 1.54rem;
+        margin: 3.3rem 0 0;
+    }
+
+    &__cardbox {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__card {
+        width: 19%;
+        margin-top: 1.4rem;
+
+        &--cover {
+            width:100%;
+        }
+
+        &--description {
+            font-size: .87rem;
+            transition: color .3s;
+            margin: .3rem 0 1rem;
+            -webkit-transition: color .3s;
+            -moz-transition: color .3s;
+            -ms-transition: color .3s;
+            -o-transition: color .3s;
+            &:hover {
+                color: $glow-text-color;
+            }
+        }
     }
 }

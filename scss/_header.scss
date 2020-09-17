@@ -5,17 +5,16 @@
     background-color: $header-color;
     border: 3px solid #333333;
     width: 100%;
+    z-index: 2;
 
-    &--mainblock {
+    &__mainblock {
         display: flex;
         justify-content: flex-end;
-        width: 45%;
+        width: $page-elements-width;
         margin: .4rem;
-    }
-
-    &--mainblock--logo {
-        margin-right: auto;
+        padding-right: 7.3rem;
     }
 }
-//  importing design for nav-links
+//  importing design for logo and nav-links
+@import "./blocks/logo";
 @import "./blocks/nav-links";

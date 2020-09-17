@@ -14,3 +14,15 @@
 
 //  importing design for podcasts' cards
 @import "./blocks/cards";
+
+@media only screen and (max-width: 800px) {
+    .box__main__menu {
+        width: 100%;
+    }
+    .box__main__podcasts {
+        width: 100%;
+    }
+    .box__main__podcasts__card {
+        width: 50%;
+    }
+}
