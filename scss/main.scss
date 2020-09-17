@@ -1,0 +1,17 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: rgb(232, 232, 236);
+}
+
+// importing font, size, color variables
+@import "./variables/fonts";
+@import "./variables/sizes";
+@import "./variables/colors";
+
+//  importing design for header, main body
+@import "./header";
+@import "./main-part";

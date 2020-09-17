@@ -1,0 +1,11 @@
+.box__main--title {
+    display: flex;
+    justify-content: center;
+    & h1 {
+        font-family: $main-font;
+        font-weight: $font-weight;
+        font-feature-settings: "tnum","tnum";
+        font-size: 3rem;
+        margin-top: 3.95rem;
+    }
+}

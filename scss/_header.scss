@@ -1,0 +1,20 @@
+.box__header {
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    background-color: $header-color;
+    border: 3px solid #333333;
+    width: 100%;
+
+    &--mainblock {
+        display: flex;
+        justify-content: flex-end;
+        width: 45%;
+        margin: .4rem;
+    }
+
+    &--mainblock--logo {
+    }
+}
+//  importing design for nav-links
+@import "./blocks/nav-links";

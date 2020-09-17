@@ -1,0 +1,14 @@
+.box__main--menu {
+    display: flex;
+    justify-content: space-between;
+    width: $page-elements-width;
+    margin-top: 2rem;
+
+    &--select--selector {
+        width: 15.6rem;
+    }
+
+    &--search--input {
+        width: 22rem;
+    }
+}

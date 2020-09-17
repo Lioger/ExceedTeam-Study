@@ -1,0 +1,20 @@
+.box__header--mainblock--link {
+        padding: 0.7rem 2.2rem;
+        font-family: $main-font;
+        font-weight: $font-weight;
+        font-feature-settings: "tnum","tnum";
+        color: #fff;
+        font-size: 1rem;
+        text-decoration: none;
+        border: 2px solid rgba(62, 192, 224, 0);
+        transition: border .4s;
+        -webkit-transition: border .4s;
+        -moz-transition: border .4s;
+        -ms-transition: border .4s;
+        -o-transition: border .4s;
+
+        &:hover {
+            border-bottom: 2px solid $glow-color;
+        }
+    }
+}
