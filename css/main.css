@@ -18,25 +18,25 @@ body {
     justify-content: flex-end;
     width: 45%;
     margin: .4rem; }
+  .box__header--mainblock--logo {
+    margin-right: auto; }
 
-.box__header--mainblock--nav {
-  display: flex; }
-  .box__header--mainblock--nav--link {
-    padding: 0.7rem 2.2rem;
-    font-family: "Lato";
-    font-weight: 400;
-    font-feature-settings: "tnum","tnum";
-    color: #fff;
-    font-size: 1rem;
-    text-decoration: none;
-    border: 2px solid rgba(62, 192, 224, 0);
-    transition: border .4s;
-    -webkit-transition: border .4s;
-    -moz-transition: border .4s;
-    -ms-transition: border .4s;
-    -o-transition: border .4s; }
-    .box__header--mainblock--nav--link:hover {
-      border-bottom: 2px solid #059bff; }
+.box__header--mainblock--link {
+  padding: 0.7rem 2.2rem;
+  font-family: "Lato";
+  font-weight: 400;
+  font-feature-settings: "tnum","tnum";
+  color: #fff;
+  font-size: 1rem;
+  text-decoration: none;
+  border: 2px solid rgba(62, 192, 224, 0);
+  transition: border .4s;
+  -webkit-transition: border .4s;
+  -moz-transition: border .4s;
+  -ms-transition: border .4s;
+  -o-transition: border .4s; }
+  .box__header--mainblock--link:hover {
+    border-bottom: 2px solid #059bff; }
 
 .box__main {
   width: 100%;
@@ -58,9 +58,39 @@ body {
 .box__main--menu {
   display: flex;
   justify-content: space-between;
-  width: 55%;
+  width: 57%;
   margin-top: 2rem; }
+  .box__main--menu--select--selector, .box__main--menu--search--input {
+    height: 2rem;
+    font-size: .95rem;
+    border: 1px solid #d9d9d9;
+    background-color: #fff;
+    padding: 6px 9px;
+    transition: border-color .5s, box-shadow .5s;
+    -webkit-transition: border-color .5s, box-shadow .5s;
+    -moz-transition: border-color .5s, box-shadow .5s;
+    -ms-transition: border-color .5s, box-shadow .5s;
+    -o-transition: border-color .5s, box-shadow .5s;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px; }
+    .box__main--menu--select--selector:hover, .box__main--menu--search--input:hover {
+      border-color: #059bff; }
+    .box__main--menu--select--selector:focus, .box__main--menu--search--input:focus {
+      border-color: #059bff;
+      box-shadow: 0 0 3px #059bff; }
   .box__main--menu--select--selector {
     width: 15.6rem; }
   .box__main--menu--search--input {
+    color: #918e8e;
     width: 22rem; }
+
+.box__main--podcasts {
+  width: 57%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  .box__main--podcasts--cards {
+    width: 18%; }

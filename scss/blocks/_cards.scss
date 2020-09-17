@@ -1,0 +1,10 @@
+.box__main--podcasts {
+    width: $page-elements-width;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &--cards {
+        width: 18%;
+    }
+}

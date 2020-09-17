@@ -4,11 +4,36 @@
     width: $page-elements-width;
     margin-top: 2rem;
 
+    &--select--selector, &--search--input {
+        height: 2rem;
+        font-size: .95rem;
+        border: 1px solid #d9d9d9;
+        background-color: #fff;
+        padding: 6px 9px;
+        transition: border-color .5s, box-shadow .5s;
+        -webkit-transition: border-color .5s, box-shadow .5s;
+        -moz-transition: border-color .5s, box-shadow .5s;
+        -ms-transition: border-color .5s, box-shadow .5s;
+        -o-transition: border-color .5s, box-shadow .5s;
+        border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+        &:hover {
+            border-color: $glow-color;
+        }
+        &:focus {
+            border-color: $glow-color;
+            box-shadow: 0 0 3px $glow-color;
+        }
+}
     &--select--selector {
         width: 15.6rem;
     }
 
     &--search--input {
+        color: $hidden-text-color;
         width: 22rem;
     }
 }
