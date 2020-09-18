@@ -7,190 +7,223 @@
     <link rel="stylesheet" type="text/css" href="./css/main.css">
 </head>
 <body>
-    <div class="box">
-        <header class="box__header">
-            <div class="box__header__mainblock">
-                <img src='./img/logo.svg' class="box__header__mainblock--logo">
-                <a href="https://www.messy.fm/about" class="box__header__mainblock--link">About</a>
-                <a href="https://www.messy.fm/book-a-demo" class="box__header__mainblock--link">Book a Demo</a>
-                <a href="https://www.messy.fm/signin" class="box__header__mainblock--link">Sign in</a>
-            </img>
-        </header>
-        <div class="box__main">
-            <div class="box__main--title">
-                <h1>Messy.fm Public Podcasts</h1>
+    <header class="header">
+        <div class="header__mainblock">
+            <img src='./img/logo.svg' class="header__mainblock--logo">
+            <a href="https://www.messy.fm/about" class="header__mainblock--link">About</a>
+            <a href="https://www.messy.fm/book-a-demo" class="header__mainblock--link">Book a Demo</a>
+            <a href="https://www.messy.fm/signin" class="header__mainblock--link">Sign in</a>
+        </img>
+    </header>
+    <div class="main">
+        <div class="main--title">
+            <h1>Messy.fm Public Podcasts</h1>
+        </div>
+        <div class="main__menu">
+            <div class="main__menu__select">
+                <select class="main__menu__select--selector">
+                    <option disabled selected hidden>Categories</option>
+                    <option>Business</option>
+                    <option>Education</option>
+                    <option>Arts</option>
+                    <option>Leisure</option>
+                    <option>Government</option>
+                    <option>Health & Fitness</option>
+                    <option>Kids & Family</option>
+                    <option>Music</option>
+                    <option>News</option>
+                    <option>Religion & Spirituality</option>
+                    <option>Science</option>
+                    <option>Society & Culture</option>
+                    <option>Sports</option>
+                    <option>Technology</option>
+                    <option>Comedy</option>
+                    <option>Fiction</option>
+                    <option>History</option>
+                    <option>True Crime</option>
+                    <option>TV & Film</option>
+                </select>         
             </div>
-            <div class="box__main__menu">
-                <div class="box__main__menu__select">
-                    <select class="box__main__menu__select--selector">
-                        <option disabled selected hidden>Categories</option>
-                        <option>Business</option>
-                        <option>Education</option>
-                        <option>Arts</option>
-                        <option>Leisure</option>
-                        <option>Government</option>
-                        <option>Health & Fitness</option>
-                        <option>Kids & Family</option>
-                        <option>Music</option>
-                        <option>News</option>
-                        <option>Religion & Spirituality</option>
-                        <option>Science</option>
-                        <option>Society & Culture</option>
-                        <option>Sports</option>
-                        <option>Technology</option>
-                        <option>Comedy</option>
-                        <option>Fiction</option>
-                        <option>History</option>
-                        <option>True Crime</option>
-                        <option>TV & Film</option>
-                    </select>         
+            <form class="main__menu__search">
+                <input type="text" class="main__menu__search--input" placeholder="Search for Podcasts">
+                <input type="submit" class="main__menu__search--button" value="">
+            </form>
+        </div>
+        <div class="main__podcasts">
+            <p class="main__podcasts--titles">
+                Top & Trending Episodes
+            </p>
+            <div class="main__podcasts__cardbox">
+                <div class="main__podcasts__card">
+                    <img src="./img/cover-1.jpeg" class="main__podcasts__card--cover">
+                    <p class="main__podcasts__card--description">
+                        The 2020 election, who is going to win and why.
+                    </p>
                 </div>
-                <form class="box__main__menu__search">
-                    <input type="text" class="box__main__menu__search--input" placeholder="Search for Podcasts">
-                    <input type="submit" class="box__main__menu__search--button" value="">
-                </form>
+                <div class="main__podcasts__card">
+                    <img src="./img/cover-1.jpeg" class="main__podcasts__card--cover">
+                    <p class="main__podcasts__card--description">
+                        Rapid Military Innovation - AFVentures Director, Jason Rathje
+                    </p>
+                </div>
+                <div class="main__podcasts__card">
+                    <img src="./img/cover-1.jpeg" class="main__podcasts__card--cover">
+                    <p class="main__podcasts__card--description">
+                        NFL Preview
+                    </p>
+                </div>
+                <div class="main__podcasts__card">
+                    <img src="./img/cover-1.jpeg" class="main__podcasts__card--cover">
+                    <p class="main__podcasts__card--description">
+                        Interview with Michael Deutsch
+                    </p>
+                </div>
+                <div class="main__podcasts__card">
+                    <img src="./img/cover-1.jpeg" class="main__podcasts__card--cover">
+                    <p class="main__podcasts__card--description">
+                        Bible Promises for Bedtime
+                    </p>
+                </div>
+                <div class="main__podcasts__card">
+                    <img src="./img/cover-1.jpeg" class="main__podcasts__card--cover">
+                    <p class="main__podcasts__card--description">
+                        Hope's nature
+                    </p>
+                </div>
+                <div class="main__podcasts__card">
+                    <img src="./img/cover-1.jpeg" class="main__podcasts__card--cover">
+                    <p class="main__podcasts__card--description">
+                        Building your Team and Community: Ammy Lowney, AS'05, Co-Founder & Co-Owner of JUICYGREENS
+                    </p>
+                </div>
+                <div class="main__podcasts__card">
+                    <img src="./img/cover-1.jpeg" class="main__podcasts__card--cover">
+                    <p class="main__podcasts__card--description">
+                        "Resilient"
+                    </p>
+                </div>
+                <div class="main__podcasts__card">
+                    <img src="./img/cover-1.jpeg" class="main__podcasts__card--cover">
+                    <p class="main__podcasts__card--description">
+                        Ep. 11 COVID Drinking and Intermittent Fasting
+                    </p>
+                </div>
+                <div class="main__podcasts__card">
+                    <img src="./img/cover-1.jpeg" class="main__podcasts__card--cover">
+                    <p class="main__podcasts__card--description">
+                        #wandasncredible reviews "Untamed" Episode 1 Part 1:Caged
+                    </p>
+                </div>
             </div>
-            <div class="box__main__podcasts">
-                <p class="box__main__podcasts--titles">
-                    Top & Trending Episodes
-                </p>
-                <div class="box__main__podcasts__cardbox">
-                    <div class="box__main__podcasts__card">
-                        <img src="./img/cover-1.jpeg" class="box__main__podcasts__card--cover">
-                        <p class="box__main__podcasts__card--description">
-                            The 2020 election, who is going to win and why.
-                        </p>
-                    </div>
-                    <div class="box__main__podcasts__card">
-                        <img src="./img/cover-1.jpeg" class="box__main__podcasts__card--cover">
-                        <p class="box__main__podcasts__card--description">
-                            Rapid Military Innovation - AFVentures Director, Jason Rathje
-                        </p>
-                    </div>
-                    <div class="box__main__podcasts__card">
-                        <img src="./img/cover-1.jpeg" class="box__main__podcasts__card--cover">
-                        <p class="box__main__podcasts__card--description">
-                            NFL Preview
-                        </p>
-                    </div>
-                    <div class="box__main__podcasts__card">
-                        <img src="./img/cover-1.jpeg" class="box__main__podcasts__card--cover">
-                        <p class="box__main__podcasts__card--description">
-                            Interview with Michael Deutsch
-                        </p>
-                    </div>
-                    <div class="box__main__podcasts__card">
-                        <img src="./img/cover-1.jpeg" class="box__main__podcasts__card--cover">
-                        <p class="box__main__podcasts__card--description">
-                            Bible Promises for Bedtime
-                        </p>
-                    </div>
-                    <div class="box__main__podcasts__card">
-                        <img src="./img/cover-1.jpeg" class="box__main__podcasts__card--cover">
-                        <p class="box__main__podcasts__card--description">
-                            Hope's nature
-                        </p>
-                    </div>
-                    <div class="box__main__podcasts__card">
-                        <img src="./img/cover-1.jpeg" class="box__main__podcasts__card--cover">
-                        <p class="box__main__podcasts__card--description">
-                            Building your Team and Community: Ammy Lowney, AS'05, Co-Founder & Co-Owner of JUICYGREENS
-                        </p>
-                    </div>
-                    <div class="box__main__podcasts__card">
-                        <img src="./img/cover-1.jpeg" class="box__main__podcasts__card--cover">
-                        <p class="box__main__podcasts__card--description">
-                            "Resilient"
-                        </p>
-                    </div>
-                    <div class="box__main__podcasts__card">
-                        <img src="./img/cover-1.jpeg" class="box__main__podcasts__card--cover">
-                        <p class="box__main__podcasts__card--description">
-                            Ep. 11 COVID Drinking and Intermittent Fasting
-                        </p>
-                    </div>
-                    <div class="box__main__podcasts__card">
-                        <img src="./img/cover-1.jpeg" class="box__main__podcasts__card--cover">
-                        <p class="box__main__podcasts__card--description">
-                            #wandasncredible reviews "Untamed" Episode 1 Part 1:Caged
-                        </p>
+            <p class="main__podcasts--titles">
+                Can't Miss Shows
+            </p>
+            <div class="main__podcasts__cardbox">
+                <div class="main__podcasts__card">
+                    <img src="./img/cover-1.jpeg" class="main__podcasts__card--cover">
+                    <p class="main__podcasts__card--description">
+                        The 2020 election, who is going to win and why.
+                    </p>
+                </div>
+                <div class="main__podcasts__card">
+                    <img src="./img/cover-1.jpeg" class="main__podcasts__card--cover">
+                    <p class="main__podcasts__card--description">
+                        Rapid Military Innovation - AFVentures Director, Jason Rathje
+                    </p>
+                </div>
+                <div class="main__podcasts__card">
+                    <img src="./img/cover-1.jpeg" class="main__podcasts__card--cover">
+                    <p class="main__podcasts__card--description">
+                        NFL Preview
+                    </p>
+                </div>
+                <div class="main__podcasts__card">
+                    <img src="./img/cover-1.jpeg" class="main__podcasts__card--cover">
+                    <p class="main__podcasts__card--description">
+                        Interview with Michael Deutsch
+                    </p>
+                </div>
+                <div class="main__podcasts__card">
+                    <img src="./img/cover-1.jpeg" class="main__podcasts__card--cover">
+                    <p class="main__podcasts__card--description">
+                        Bible Promises for Bedtime
+                    </p>
+                </div>
+            </div>
+            <p class="main__podcasts--titles">
+                Latest Episodes from Messy Podcasters
+            </p>
+            <div class="main__podcasts__cardbox">
+                <div class="main__podcasts__card">
+                    <img src="./img/cover-1.jpeg" class="main__podcasts__card--cover">
+                    <p class="main__podcasts__card--description">
+                        The 2020 election, who is going to win and why.
+                    </p>
+                </div>
+                <div class="main__podcasts__card">
+                    <img src="./img/cover-1.jpeg" class="main__podcasts__card--cover">
+                    <p class="main__podcasts__card--description">
+                        Rapid Military Innovation - AFVentures Director, Jason Rathje
+                    </p>
+                </div>
+                <div class="main__podcasts__card">
+                    <img src="./img/cover-1.jpeg" class="main__podcasts__card--cover">
+                    <p class="main__podcasts__card--description">
+                        NFL Preview
+                    </p>
+                </div>
+                <div class="main__podcasts__card">
+                    <img src="./img/cover-1.jpeg" class="main__podcasts__card--cover">
+                    <p class="main__podcasts__card--description">
+                        Interview with Michael Deutsch
+                    </p>
+                </div>
+                <div class="main__podcasts__card">
+                    <img src="./img/cover-1.jpeg" class="main__podcasts__card--cover">
+                    <p class="main__podcasts__card--description">
+                        Bible Promises for Bedtime
+                    </p>
+                </div>
+            </div>                 
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-main-container">
+            <div class="footer-top-container">
+                <div class="footer-logo-box"><img src="./img/logo.svg" class="footer-logo-box_icon"></div>
+                <div class="footer-links">
+                    <nav class="footer-links__nav">
+                        <ul>
+                            <li class="footer-links__nav__items"><a href="https://www.messy.fm/about" class="footer-links__nav__items_links">About</a></li>
+                            <li class="footer-links__nav__items"><a href="https://www.messy.fm/listen" class="footer-links__nav__items_links">Listen</a></li>
+                            <li class="footer-links__nav__items"><a href="https://www.messy.fm/pricing" class="footer-links__nav__items_links">Pricing</a></li>
+                            <li class="footer-links__nav__items"><a href="https://www.messy.fm/faqs" class="footer-links__nav__items_links">FAQ</a></li>
+                            <li class="footer-links__nav__items"><a href="https://www.messy.fm/how-to-get-started" class="footer-links__nav__items_links">Get Started</a></li>
+                        </ul>
+                    </nav>
+                    <div class="footer-links__social">
+                        <div class="footer-links__social_contact">
+                            Contact:<br>
+                            <a href="help@messy.fm" class="footer-links__social_contact_email">help@messy.fm</a>
+                        </div>
+                        <div class="footer-links__social_community">
+                            Community:<br>
+                            <div class="social-media-links">
+                                <img src="./img/twitter.png" class="social-media-links_icons">
+                                <img src="./img/twitter.png" class="social-media-links_icons">
+                                <img src="./img/twitter.png" class="social-media-links_icons">
+                                <img src="./img/twitter.png" class="social-media-links_icons">
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <p class="box__main__podcasts--titles">
-                    Can't Miss Shows
-                </p>
-                <div class="box__main__podcasts__cardbox">
-                    <div class="box__main__podcasts__card">
-                        <img src="./img/cover-1.jpeg" class="box__main__podcasts__card--cover">
-                        <p class="box__main__podcasts__card--description">
-                            The 2020 election, who is going to win and why.
-                        </p>
-                    </div>
-                    <div class="box__main__podcasts__card">
-                        <img src="./img/cover-1.jpeg" class="box__main__podcasts__card--cover">
-                        <p class="box__main__podcasts__card--description">
-                            Rapid Military Innovation - AFVentures Director, Jason Rathje
-                        </p>
-                    </div>
-                    <div class="box__main__podcasts__card">
-                        <img src="./img/cover-1.jpeg" class="box__main__podcasts__card--cover">
-                        <p class="box__main__podcasts__card--description">
-                            NFL Preview
-                        </p>
-                    </div>
-                    <div class="box__main__podcasts__card">
-                        <img src="./img/cover-1.jpeg" class="box__main__podcasts__card--cover">
-                        <p class="box__main__podcasts__card--description">
-                            Interview with Michael Deutsch
-                        </p>
-                    </div>
-                    <div class="box__main__podcasts__card">
-                        <img src="./img/cover-1.jpeg" class="box__main__podcasts__card--cover">
-                        <p class="box__main__podcasts__card--description">
-                            Bible Promises for Bedtime
-                        </p>
-                    </div>
-                </div>
-                <p class="box__main__podcasts--titles">
-                    Latest Episodes from Messy Podcasters
-                </p>
-                <div class="box__main__podcasts__cardbox">
-                    <div class="box__main__podcasts__card">
-                        <img src="./img/cover-1.jpeg" class="box__main__podcasts__card--cover">
-                        <p class="box__main__podcasts__card--description">
-                            The 2020 election, who is going to win and why.
-                        </p>
-                    </div>
-                    <div class="box__main__podcasts__card">
-                        <img src="./img/cover-1.jpeg" class="box__main__podcasts__card--cover">
-                        <p class="box__main__podcasts__card--description">
-                            Rapid Military Innovation - AFVentures Director, Jason Rathje
-                        </p>
-                    </div>
-                    <div class="box__main__podcasts__card">
-                        <img src="./img/cover-1.jpeg" class="box__main__podcasts__card--cover">
-                        <p class="box__main__podcasts__card--description">
-                            NFL Preview
-                        </p>
-                    </div>
-                    <div class="box__main__podcasts__card">
-                        <img src="./img/cover-1.jpeg" class="box__main__podcasts__card--cover">
-                        <p class="box__main__podcasts__card--description">
-                            Interview with Michael Deutsch
-                        </p>
-                    </div>
-                    <div class="box__main__podcasts__card">
-                        <img src="./img/cover-1.jpeg" class="box__main__podcasts__card--cover">
-                        <p class="box__main__podcasts__card--description">
-                            Bible Promises for Bedtime
-                        </p>
-                    </div>
-                </div>                 
+            </div>
+            <div class="footer__last-string">
+                <div class="footer__last-string__C">Ⓒ 2020 MESSY.FM – All rights reserved</div>
+                <a class="footer__last-string__links" href="https://www.messy.fm/terms">Terms of Service</a>
+                <a class="footer__last-string__links" href="https://www.messy.fm/privacy">Privacy Policy</a>
             </div>
         </div>
-        <footer class="box__footer">
-
-        </footer>
-    </div>
+    </footer>
 </body>
 </html>

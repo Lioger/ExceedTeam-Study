@@ -12,7 +12,122 @@ body {
 @import "./variables/sizes";
 @import "./variables/colors";
 
-//  importing design for header, main body and footer part
+//  importing design for header-container, logo and nav-links
 @import "./header";
+@import "./blocks/logo";
+@import "./blocks/nav-links";
+
+//  importing design for main body container, titles, menues, podcasts' cards
 @import "./main-part";
+@import "./blocks/titles";
+@import "./blocks/menu";
+@import "./blocks/cards";
+
+//  importing design for footer-container, logo and nav-links
 @import "./footer";
+
+
+
+@media only screen and (max-width: 1300px) {
+    .header__mainblock {
+        width: 80%;
+        padding-right: 6rem;
+    }
+    .header__mainblock--link {
+        padding: 0.6rem 1.8rem 0.7rem;
+    }
+    .main__menu {
+        width: 80%;
+    }
+    .main__podcasts {
+        width: 80%;
+    }
+    .main__podcasts__card {
+        width: 24%;
+    }
+    .footer-main-container {
+        width: 80%;
+    }
+    .footer-links {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .header__mainblock {
+        width: 100%;
+        padding-right: 4rem;
+    }
+    .header__mainblock--link {
+        padding: 0.6rem 1.2rem 0.7rem;
+    }
+    .main__menu {
+        width: 100%;
+    }
+    .main__podcasts {
+        width: 100%;
+    }
+    .main__podcasts__card {
+        width: 33%;
+    }
+    .footer-main-container {
+        width: 95%;
+    }
+    .footer-logo-box {
+        width: 18%;
+    }
+    .main__podcasts__card--description {
+        font-size: .9rem;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .header__mainblock {
+        padding-right: 2rem;
+    }
+    .header__mainblock--link {
+        padding: 0.6rem 0.6rem 0.7rem;
+    }
+    .main__podcasts__card {
+        width: 48%;
+    }
+    .main__podcasts__card--description {
+        font-size: .95rem;
+    }
+    .footer-logo-box {
+        width: 22%;
+    }
+    .footer-links {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .header__mainblock {
+        padding-right: 0rem;
+    }
+    .header__mainblock--link {
+        padding: 0.6rem 0.2rem 0.7rem;
+    }
+    .main--title {
+        text-align: center;
+    }
+    .main__menu {
+        justify-content: center;
+    }
+    .main__menu__select--selector {
+        margin-bottom: 10px;
+    }
+    .main__podcasts__card {
+        width: 100%;
+    }
+    .main__podcasts__card--description {
+        font-size: 1rem;
+    }
+    .footer-logo-box {
+        width: 25%;
+    }
+    .footer-links {
+        width: 65%;
+    }
+}

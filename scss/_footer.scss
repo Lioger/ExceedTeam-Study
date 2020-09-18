@@ -1,4 +1,110 @@
-.box__footer {
+@mixin footer-a {
+    text-decoration: none;
+    color: #fff;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.footer {
     background-color: $header-color;
     height: 365px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: $main-font;
+    color: #fff;
+
+    &-main-container {
+        width: $page-elements-width;
+    }
+
+    &-top-container {
+        width: 100%;
+        height: 280px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__last-string {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        font-size: .85rem;
+        padding-right: 1rem;
+        
+        &__C {
+            margin-right: auto;
+
+        }
+
+        &__links {
+            padding: 0 1rem;
+            @include footer-a;
+        }
+    }
+}
+
+.footer-logo-box {
+    width: 13%;
+    display: flex;
+    align-items: center;
+    
+    &_icon {
+        width: 100%;
+    }
+}
+
+.footer-links {
+    display: flex;
+    width: 45%;
+    line-height: 1.5;
+
+    &__nav {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding: 1.1rem 2.2rem 0;
+
+        &__items {
+            padding-bottom: 1rem;
+            list-style-type: none;
+
+            &_links {
+                @include footer-a;
+            }
+        }
+    }
+
+    &__social {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 3rem 0 0 5.7rem;
+
+        &_contact {
+            height: 40%;
+
+            &_email {
+                @include footer-a;
+            }
+        }
+        &_community {
+            padding-top: .3em;
+        }
+    }
+}
+.social-media-links {
+    width: 63%;
+    padding-top: .6rem;
+    display: flex;
+    justify-content: space-between;
+
+    &_icons {
+        width: 1.4rem;
+    }
 }

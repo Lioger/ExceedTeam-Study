@@ -1,6 +1,7 @@
-.box__main__menu {
+.main__menu {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     width: $page-elements-width;
     margin-top: 2.3rem;
 
@@ -29,7 +30,7 @@
         }
 }
     &__select--selector {
-        width: 15.6rem;
+        width: 16.7rem;
     }
 
     &__search--input {
@@ -57,7 +58,7 @@
             opacity: 1;
         }
 
-        &:hover .box__main__menu__search--input {
+        &:hover .main__menu__search--input {
             border-color: $glow-color;
         }
     }

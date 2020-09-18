@@ -1,9 +1,9 @@
-.box__header {
+.header {
     display: flex;
     position: fixed;
     justify-content: center;
     background-color: $header-color;
-    border: 3px solid #333333;
+    border: 1px solid #333333;
     width: 100%;
     z-index: 2;
 
@@ -15,6 +15,3 @@
         padding-right: 7.3rem;
     }
 }
-//  importing design for logo and nav-links
-@import "./blocks/logo";
-@import "./blocks/nav-links";
